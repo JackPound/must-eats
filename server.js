@@ -34,7 +34,7 @@ app.use(function(req, res, next){
 
 // ROUTES && CONTROLLERS HER
 app.get('/', function(req,res){
-	res.render('home')
+	res.render('what')
 })
 
 app.listen(process.env.PORT || 3000, () => {
