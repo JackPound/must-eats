@@ -64,7 +64,6 @@ app.post('restaurant/:id', function(req, res){
 	// put liked restaurant into user favorites so we can take away like button
 })
 
-app.get()
 app.listen(process.env.PORT || 3000, () => {
 	console.log('|===========listening port 3000===========|')
 })
