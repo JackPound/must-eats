@@ -36,7 +36,7 @@ app.use(function(req, res, next){
 // home page, type in city name ect
 // when they click submit send them to /city/:id/category
 app.get('/', function(req,res){
-	res.render('home')
+	res.render('what')
 })
 
 // for getting individual city, we won't use this

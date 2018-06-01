@@ -1,0 +1,14 @@
+.home {
+	margin-top: 15%;
+}
+.catImage {
+	height: 300px;
+	width: 200px;
+}
+nav {
+	background-color: #FFF072!important;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+h1 {
+	font-family: 'Grand Hotel', cursive;
+}
