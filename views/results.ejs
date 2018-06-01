@@ -1,1 +1,29 @@
-<h1>This will be were the results are posted</h1>
+<h1 class="center">Drinks</h1>
+	<div class='row'>
+		<%for(let place in drinks){%>
+			<div class='col m12 left'>
+				<div id="restCard" data-id=<%= %>>
+					<img id="restImage" src=<%=  %>>
+					<br>
+					<div class="plantName"><%= plants[plant].commonName %></div>
+			
+
+					<div class="commentTarget">
+						<% for(i = 0; i < plants[plant].comments.length; i++) {%>
+							<div>
+								<%= plants[plant].comments[i] %>
+							</div>
+						<%};%>
+						
+					</div>
+					<button class="commentBtn btn" >Leave a Comment!</button>
+					<form class="commentForm hide" method="POST" action="/plantPage" data-id=<%= plants[plant]._id %>>
+						<textarea class="commentBox" name="commentBox" placeholder="Comment"></textarea>
+						<br>
+						<button class="postBtn btn" type="submit">Post Your Comment</button>
+						<button class="cancelBtn btn">X</button>
+					</form>
+				</div>
+			</div>
+		<%};%>
+	</div>

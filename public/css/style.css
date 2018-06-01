@@ -3,12 +3,16 @@
 }
 .catImage {
 	height: 300px;
-	width: 200px;
+	width: 250px;
 }
 nav {
 	background-color: #FFF072!important;
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Grand Hotel', cursive;
+
 }
 h1 {
-	font-family: 'Grand Hotel', cursive;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+body {
+	background-image: url("/images/background.jpeg");
 }
