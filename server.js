@@ -33,10 +33,38 @@ app.use(function(req, res, next){
 
 
 // ROUTES && CONTROLLERS HER
+// home page, type in city name ect
+// when they click submit send them to /city/:id/category
 app.get('/', function(req,res){
 	res.render('home')
 })
 
+// for getting individual city, we won't use this
+app.get('/city/:id', function(req,res){
+})
+
+// choose a category page, from given city, will only default to seattle to start
+app.get('/city/:id/category', function(req, res){
+	// display all 3 categories
+})
+
+// shows all restaurants in a category for given city
+app.get('/city/:id/category/:cat_id', function(req, res){
+	// get all restaurants for a given city and category
+})
+
+// show single restaurant 
+app.get('restaurant/:id', function(req, res){
+	// get all of the restaurants' information and display it
+})
+
+// like a restaurant 
+app.post('restaurant/:id', function(req, res){
+	// increase like count of an individual restaurant
+	// put liked restaurant into user favorites so we can take away like button
+})
+
+app.get()
 app.listen(process.env.PORT || 3000, () => {
 	console.log('|===========listening port 3000===========|')
 })

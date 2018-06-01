@@ -1,12 +1,12 @@
 const mongoose         = require('mongoose');
 const bcrypt           = require('bcrypt');
-
+const Restaurant       = require('./restaurant')
 // user schema
 var userSchema = new mongoose.Schema({
 	username: {type: String, required: true},
 	email: {type: String, unique: true, required: true},
 	password: {type: String, required: true},
-	// favorites: [restaurantSchema]
+	favorites: Restaurant.schema
 });
 // checks whether the password is correct
 userSchema.methods.isAuthenticated = function(password){
