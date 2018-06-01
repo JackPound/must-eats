@@ -49,7 +49,7 @@ app.get('/city/:id/category', function(req, res){
 	res.render('what')
 })
 
-// shows all restaurants in a category for given city
+// shows al restaurants in a category for given city
 app.get('/city/:id/category/:cat_id', function(req, res){
 	Restaurant.find({city: 'Seattle', category: req.params.cat_id}, function(err, restaurants){
 		res.render('results', {restaurants: restaurants})

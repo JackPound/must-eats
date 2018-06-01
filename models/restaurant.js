@@ -10,11 +10,11 @@ var restaurantSchema = new mongoose.Schema({
 	website: String,
 	category: Number,
 	likes: Number,
-	hours: String,
+	hours: [String],
 	phoneNumber: String,
 	attire: String,
 	parking: String,
-	paymentMethod: String,
+	acceptCreditCard: Boolean,
 	city: String
 });
 
